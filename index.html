@@ -11,52 +11,6 @@
   </head>
   <body>
 
-<!--<script>
-    // initialize and setup facebook js sdk
-    window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '214187522365473',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('share').style.display = 'inline';
-          } else if (response.status === 'not_authorized') {
-
-          } else {
-
-          }
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    function login() {
-      FB.login(function(response) {
-        if (response.status === 'connected') {
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('share').style.display = 'inline';
-          } else if (response.status === 'not_authorized') {
-
-          } else {
-
-          }
-      }, {scope: 'publish_actions'});
-    }
-    // posting on user timeline
-    function post() {
-      FB.api('/me/feed', 'post', {message: '"Stay Secure, Support Privacy" Visit http://privacymonth2017.online to show your support to user privacy by changing your Facebook Profile picture. #privacymonth #advocate4privacy #mozilla'}, function(response) {
-          document.getElementById('share').innerHTML = 'Shared !!!!';
-      });
-    }
-  </script>-->
-
     <h1>India uses Firefox Nightly | #INUsesFxNightly</h1>
     <div class="container">
       <div class="manifesto">
@@ -69,9 +23,7 @@
           <a href="https://nightly.mozilla.org" target="_blank"><button class="pure-button">Download Nightly</button></a>
           <button id="select-photo">Select profile photo</button>
           <a href="#" id="download-btn" download="nighlty-pic.png"><button class="pure-button download-btn">Download Profile Pic</button></a>
-          <!--<button id="share" style="display: none;" onclick="post()">Share on Facebook</button>
-          <button id="login" onclick="login()">Login to Fb to share</button>-->
-          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="#INUsesFxNightly #mozilla  To change your profile pic in support please visit" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="#INUsesFxNightly #Mozilla @MozillaIN  To change your profile pic in support please visit" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <canvas id="canvas" class="magic pure-img" width="800" height="800"></canvas><br>
       </div>
